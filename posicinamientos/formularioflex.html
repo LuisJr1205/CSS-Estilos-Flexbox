@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&family=Tilt+Warp&display=swap" rel="stylesheet">
+    <title>Formulario Flx Box</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Tilt Warp', cursive;
+        }
+
+        form{
+            background-color: #4E31AA;
+            width: 30%;
+            height: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 30px;
+            border: 20px solid #3A1078;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .columnas{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fields{
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #3795BD;
+            font-size: 20px;
+        }
+
+        input,textarea{
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            color: #fff;
+            transition: all 0.3s;
+        }
+
+        input:focus,
+        textarea:focus{
+            outline: none;
+        }
+
+        input:focus{
+            border-bottom: 2px solid rgba(255, 255, 255, 1);
+        }
+
+        textarea{
+            resize: none;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            flex-basis: 100px;
+            transition: all 0.3s;
+        }
+
+        textarea:focus{
+            border: 2px solid rgba(255, 255, 255, 1);
+        }
+
+        .btn{
+            display: flex;
+            justify-content: center;
+        }
+
+        button{
+            padding: 15px 25px;
+            background: #3795BD90;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.5s;
+        }
+
+        button:hover{
+            padding: 15px 30px;
+            background: #3795BD;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="columnas">
+            <div class="fields">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" autocomplete="off">
+            </div>
+
+            <div class="fields">
+                <label for="lastname">Apellido</label>
+                <input type="text" id="lastname" name="lastname" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="columnas">
+            <div class="fields">
+                <label for="tel">Telefono</label>
+                <input type="text" id="tel" name="tel" autocomplete="off">
+            </div>
+
+            <div class="fields">
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email" autocomplete="off">
+            </div>
+        </div>
+
+        <div class="fields">
+            <label for="coment">Comentarios</label>
+            <textarea id="coment"></textarea>
+        </div>
+
+        <div class="btn">
+            <button>Enviar</button>
+        </div>
+    </form>
+    
+</body>
+</html>

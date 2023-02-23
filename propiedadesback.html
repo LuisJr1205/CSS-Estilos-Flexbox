@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fondos cajas css</title>
+    <style>
+        #contenedor{
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+
+            /* fondo plano */
+            background: #0ae4e400;
+            background: rgba(146, 11, 11, 0.5);
+
+            /* fondo degradado */
+            background: linear-gradient(90deg,blue,orange);
+            background: radial-gradient(orange, blue);
+            /* imagen de fondo */
+            background-image: url(archivos/messi.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center;
+
+            background: #000 url(archivos/messi.jpg) no-repeat scroll center;
+            background-size: cover;
+        }
+        .contenido{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(146, 11, 11, 0.5)
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contenedor">
+        <div class="contenido"></div>
+    </div>
+   
+
+</body>
+</html>
